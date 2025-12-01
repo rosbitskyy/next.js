@@ -85,7 +85,7 @@ export function getLayerAssets({
 
         return createElement('script', {
           src: fullSrc,
-          async: true,
+          defer: true,
           key: `script-${index}`,
           nonce: ctx.nonce,
         })
